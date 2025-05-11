@@ -5,9 +5,11 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,
-    host: true
+    host: true,
+    hmr: true
   },
-  optimizeDeps: {
-    exclude: ['lucide-react']
+  build: {
+    sourcemap: true,
+    outDir: 'dist'
   }
 });
