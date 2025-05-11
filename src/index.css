@@ -11,6 +11,7 @@ body {
   box-sizing: border-box;
   background-color: #000;
   color: #fff;
+  min-height: 100vh;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -40,23 +41,5 @@ body {
   }
   100% {
     box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
-  }
-}
-
-@layer components {
-  .republic-text {
-    @apply text-blue-300;
-  }
-  
-  .separatist-text {
-    @apply text-red-300;
-  }
-  
-  .republic-bg {
-    @apply bg-blue-700;
-  }
-  
-  .separatist-bg {
-    @apply bg-red-700;
   }
 }
