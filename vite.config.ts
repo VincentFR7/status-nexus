@@ -13,3 +13,7 @@ export default defineConfig({
     outDir: 'dist'
   }
 });
+
+module.exports = {
+  publicPath: '/status-nexus/'
+}
