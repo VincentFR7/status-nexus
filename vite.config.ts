@@ -6,14 +6,18 @@ export default defineConfig({
   server: {
     port: 5173,
     host: true,
-    hmr: true
+    hmr: true,
+    watch: {
+      usePolling: true
+    }
   },
   build: {
     sourcemap: true,
     outDir: 'dist'
+  },
+  resolve: {
+    alias: {
+      '@': '/src'
+    }
   }
 });
-
-module.exports = {
-  publicPath: '/status-nexus/'
-}
